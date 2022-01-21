@@ -1,0 +1,665 @@
+
+连接器　版本8.7.7.211123
+Input Object File: E:\FX801E_190411\STARTUP1_L.OBJ
+Input Object File: E:\FX801E_190411\CLOCK_RUN.OBJ
+Input Object File: E:\FX801E_190411\INIT_HT67F489.OBJ
+Input Object File: E:\FX801E_190411\EEPROM.OBJ
+Input Object File: E:\FX801E_190411\UART.OBJ
+Input Object File: E:\FX801E_190411\KEYSCAN.OBJ
+Input Object File: E:\FX801E_190411\DEFINE.OBJ
+Input Object File: E:\FX801E_190411\LCD.OBJ
+Input Object File: E:\FX801E_190411\MAIN.OBJ
+Input Object File: E:\FX801E_190411\MENU.OBJ
+Input Object File: E:\FX801E_190411\FEED.OBJ
+Input Object File: E:\FX801E_190411\MOTER.OBJ
+Input Object File: E:\FX801E_190411\SOUND_ISD1820.OBJ
+Input Object File: E:\FX801E_190411\LED.OBJ
+Input Object File: E:\FX801E_190411\VOLTAGE.OBJ
+
+Input Library File: E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB
+Input Library File: E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib
+
+
+     Bank    Start     End      Length     Class    AvgIns    Name
+     00h     0000h     0000h    0001h      CODE               @code (E:\FX801E_190411\MAIN.OBJ)
+     00h     0001h     0001h    0001h      CODE               _voltage_lcd (E:\FX801E_190411\VOLTAGE.OBJ)
+     00h     0004h     0007h    0004h      CODE               @Interrupt_INT0_code (E:\FX801E_190411\MAIN.OBJ)
+     00h     0008h     000bh    0004h      CODE               @Interrupt_INT1_code (E:\FX801E_190411\MAIN.OBJ)
+     00h     000ch     000fh    0004h      CODE               @Interrupt_tm0_code (E:\FX801E_190411\MAIN.OBJ)
+     00h     0010h     0013h    0004h      CODE               _rtc_init (E:\FX801E_190411\CLOCK_RUN.OBJ)
+     00h     0014h     001ch    0009h      CODE               _time_save (E:\FX801E_190411\CLOCK_RUN.OBJ)
+     00h     001dh     0023h    0007h      CODE               _BUZZER_inlt (E:\FX801E_190411\MAIN.OBJ)
+     00h     0024h     0027h    0004h      CODE               @Interrupt_INT2_code (E:\FX801E_190411\MAIN.OBJ)
+     00h     0028h     002bh    0004h      CODE               @Interrupt_INT3_code (E:\FX801E_190411\MAIN.OBJ)
+     00h     002ch     002fh    0004h      CODE               @Interrupt_ISC0_code (E:\FX801E_190411\MAIN.OBJ)
+     00h     0030h     004dh    001eh      CODE               @ROMDATA_BASE (E:\FX801E_190411\STARTUP1_L.OBJ)
+     00h     004eh     0088h    003bh      CODE               @start (E:\FX801E_190411\MAIN.OBJ)
+     00h     0089h     009eh    0016h      CODE               _GPIOA_INIT (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     009fh     00b4h    0016h      CODE               _GPIOB_INIT (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     00b5h     00cah    0016h      CODE               _GPIOC_INIT (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     00cbh     00e0h    0016h      CODE               _GPIOE_INIT (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     00e1h     00f6h    0016h      CODE               _GPIOF_INIT (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     00f7h     0100h    000ah      CODE               _LCD_init (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0101h     0108h    0008h      CODE               _AD_init (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0109h     0112h    000ah      CODE               _init_SyS (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0113h     011ch    000ah      CODE               _init_Timer (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     011dh     0127h    000bh      CODE               _init_Timer1 (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0128h     0132h    000bh      CODE               _init_Timer_isc0 (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0133h     0140h    000eh      CODE               _init_Timerset (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0141h     0156h    0016h      CODE               _e2prom_write (E:\FX801E_190411\EEPROM.OBJ)
+     00h     0157h     016eh    0018h      CODE               _e2prom_read (E:\FX801E_190411\EEPROM.OBJ)
+     00h     016fh     017dh    000fh      CODE               _e2prom_init (E:\FX801E_190411\EEPROM.OBJ)
+     00h     017eh     018dh    0010h      CODE               _Delay_ms (E:\FX801E_190411\UART.OBJ)
+     00h     018eh     0268h    00dbh      CODE               _key_scan (E:\FX801E_190411\KEYSCAN.OBJ)
+     00h     0269h     02bbh    0053h      CODE               _lcd_fill_sr (E:\FX801E_190411\LCD.OBJ)
+     00h     02bch     060ah    034fh      CODE               _rtc_lcd (E:\FX801E_190411\LCD.OBJ)
+     00h     060bh     0675h    006bh      CODE               _LCD_clrscreen (E:\FX801E_190411\LCD.OBJ)
+     00h     0676h     07b0h    013bh      CODE               _main (E:\FX801E_190411\MAIN.OBJ)
+     00h     07b1h     080dh    005dh      CODE               _Interrupt_tm0 (E:\FX801E_190411\MAIN.OBJ)
+     00h     080eh     082dh    0020h      CODE               _Interrupt_ISC0 (E:\FX801E_190411\MAIN.OBJ)
+     00h     082eh     0833h    0006h      CODE               _Interrupt_INT0 (E:\FX801E_190411\MAIN.OBJ)
+     00h     0834h     0839h    0006h      CODE               _Interrupt_INT1 (E:\FX801E_190411\MAIN.OBJ)
+     00h     083ah     083fh    0006h      CODE               _Interrupt_INT2 (E:\FX801E_190411\MAIN.OBJ)
+     00h     0840h     0845h    0006h      CODE               _Interrupt_INT3 (E:\FX801E_190411\MAIN.OBJ)
+     00h     0846h     0926h    00e1h      CODE               _lcd_num_5 (E:\FX801E_190411\MENU.OBJ)
+     00h     0927h     0a07h    00e1h      CODE               _lcd_num (E:\FX801E_190411\MENU.OBJ)
+     00h     0a08h     0a93h    008ch      CODE               _lcd_num_3 (E:\FX801E_190411\MENU.OBJ)
+     00h     0a94h     0b74h    00e1h      CODE               _lcd_num2_2 (E:\FX801E_190411\MENU.OBJ)
+     00h     0b75h     0bb8h    0044h      CODE               _lcd_num_1 (E:\FX801E_190411\MENU.OBJ)
+     00h     0bb9h     0bd7h    001fh      CODE               _lcd_selcet (E:\FX801E_190411\MENU.OBJ)
+     00h     0bd8h     0c18h    0041h      CODE               _lcd_selcet_off (E:\FX801E_190411\MENU.OBJ)
+     00h     0c19h     0cdch    00c4h      CODE               _set_val (E:\FX801E_190411\MENU.OBJ)
+     00h     0cddh     0d89h    00adh      CODE               _set_val_time (E:\FX801E_190411\MENU.OBJ)
+     00h     0d8ah     0df5h    006ch      CODE               _set_time (E:\FX801E_190411\MENU.OBJ)
+     00h     0df6h     0e75h    0080h      CODE               _set_meal (E:\FX801E_190411\MENU.OBJ)
+     00h     0e76h     0ec3h    004eh      CODE               _get_meal (E:\FX801E_190411\MENU.OBJ)
+     00h     0ec4h     0f5eh    009bh      CODE               _menu_lcd (E:\FX801E_190411\MENU.OBJ)
+     00h     0f5fh     0fa7h    0049h      CODE               _sleep_mode (E:\FX801E_190411\MENU.OBJ)
+     00h     0fa8h     0fc3h    001ch      CODE               _frist_menu (E:\FX801E_190411\MENU.OBJ)
+     00h     0fc4h     0fe2h    001fh      CODE               _kaiji_mode (E:\FX801E_190411\MENU.OBJ)
+     00h     0fe3h     105bh    0079h      CODE               _kaiji_init (E:\FX801E_190411\MENU.OBJ)
+     00h     105ch     1083h    0028h      CODE               _GPIO_INIT (E:\FX801E_190411\MENU.OBJ)
+     00h     1084h     10d3h    0050h      CODE               _feed_run (E:\FX801E_190411\FEED.OBJ)
+     00h     10d4h     1152h    007fh      CODE               _feed_scan (E:\FX801E_190411\FEED.OBJ)
+     00h     1153h     11ach    005ah      CODE               _motor_run (E:\FX801E_190411\MOTER.OBJ)
+     00h     11adh     11d9h    002dh      CODE               _motor (E:\FX801E_190411\MOTER.OBJ)
+     00h     11dah     11f0h    0017h      CODE               _sound_rec (E:\FX801E_190411\SOUND_ISD1820.OBJ)
+     00h     11f1h     11f8h    0008h      CODE               _sound_play (E:\FX801E_190411\SOUND_ISD1820.OBJ)
+     00h     11f9h     1200h    0008h      CODE               _pwr_task (E:\FX801E_190411\LED.OBJ)
+     00h     1201h     120eh    000eh      CODE               _builtin_holtek_delay_isr00 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     120fh     1227h    0019h      CODE               _builtin_holtek_divmodqi4_isr00 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     1228h     122ah    0003h      CODE               _CROM2PROM (CROM2PROM)
+     00h     0080h     0080h    0001h      DATA     271       @data_ra (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0081h     0081h    0001h      DATA     82        @data_rb (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0082h     0082h    0001h      DATA     51        @data_rc (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0083h     0083h    0001h      DATA     12        @data_rd (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0084h     0084h    0001h      DATA     10        @data_re (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0085h     0085h    0001h      DATA     2         @data_r10c (isr:ra~rh)
+     00h     0086h     0086h    0001h      DATA     2         @data_r20c (isr:ra~rh)
+     00h     0087h     0087h    0001h      DATA     6         @data_ra0c (isr:ra~rh)
+     00h     0088h     0088h    0001h      DATA     2         @data_r12c (isr:ra~rh)
+     00h     0089h     0089h    0001h      DATA     2         @data_r22c (isr:ra~rh)
+     00h     008ah     008ah    0001h      DATA     2         @data_r104 (isr:ra~rh)
+     00h     008bh     008bh    0001h      DATA     2         @data_r204 (isr:ra~rh)
+     00h     008ch     008ch    0001h      DATA     2         @data_r108 (isr:ra~rh)
+     00h     008dh     008dh    0001h      DATA     2         @data_r208 (isr:ra~rh)
+     00h     008eh     008eh    0001h      DATA     2         @data_r124 (isr:ra~rh)
+     00h     008fh     008fh    0001h      DATA     2         @data_r224 (isr:ra~rh)
+     00h     0090h     0090h    0001h      DATA     2         @data_r128 (isr:ra~rh)
+     00h     0091h     0091h    0001h      DATA     2         @data_r228 (isr:ra~rh)
+     00h     00adh     00aeh    0002h      DATA     28        @HCCINIT_lcd_timeout (E:\FX801E_190411\CLOCK_RUN.OBJ)
+     00h     00afh     00b0h    0002h      DATA     14        @HCCINIT_key_value_count (E:\FX801E_190411\KEYSCAN.OBJ)
+     00h     00b1h     00b1h    0001h      DATA     11        @HCCINIT_meal_flag (E:\FX801E_190411\MAIN.OBJ)
+     00h     00b2h     00b2h    0001h      DATA     9         @HCCINIT_lcd_glint (E:\FX801E_190411\CLOCK_RUN.OBJ)
+     00h     00b3h     00b3h    0001h      DATA     9         @HCCINIT_led_flag (E:\FX801E_190411\MAIN.OBJ)
+     00h     00b4h     00b4h    0001h      DATA     9         @HCCINIT_sheep_flag (E:\FX801E_190411\MAIN.OBJ)
+     00h     00b5h     00b5h    0001h      DATA     7         @HCCINIT_key_lock (E:\FX801E_190411\MAIN.OBJ)
+     00h     00b6h     00b6h    0001h      DATA     6         @HCCINIT_time2_task (E:\FX801E_190411\MAIN.OBJ)
+     00h     00b7h     00b7h    0001h      DATA     6         @HCCINIT_col_staus (E:\FX801E_190411\MAIN.OBJ)
+     00h     00b8h     00b8h    0001h      DATA     6         @HCCINIT_key_up_flag (E:\FX801E_190411\MAIN.OBJ)
+     00h     00b9h     00b9h    0001h      DATA     5         @HCCINIT_task_run_led (E:\FX801E_190411\CLOCK_RUN.OBJ)
+     00h     00bah     00bah    0001h      DATA     5         @HCCINIT_feed_going (E:\FX801E_190411\FEED.OBJ)
+     00h     00bbh     00bbh    0001h      DATA     4         @HCCINIT_res (E:\FX801E_190411\MAIN.OBJ)
+     00h     00bch     00bch    0001h      DATA     4         @HCCINIT_ISD1820_REC_TIME (E:\FX801E_190411\SOUND_ISD1820.OBJ)
+     00h     00bdh     00bdh    0001h      DATA     3         @HCCINIT_feed_detect (E:\FX801E_190411\CLOCK_RUN.OBJ)
+     00h     00beh     00beh    0001h      DATA     3         @HCCINIT_task_delay_led (E:\FX801E_190411\CLOCK_RUN.OBJ)
+     00h     00bfh     00bfh    0001h      DATA     3         @HCCINIT_key_int (E:\FX801E_190411\KEYSCAN.OBJ)
+     00h     00c0h     00c0h    0001h      DATA     3         @HCCINIT_time_save_flag_1 (E:\FX801E_190411\MAIN.OBJ)
+     00h     00c1h     00c1h    0001h      DATA     3         @HCCINIT_time_save_flag (E:\FX801E_190411\MAIN.OBJ)
+     00h     00c2h     00c2h    0001h      DATA     3         @HCCINIT_buzzer_detect (E:\FX801E_190411\MAIN.OBJ)
+     00h     00c3h     00c6h    0004h      DATA     3         @HCCINIT_eeprom_time (E:\FX801E_190411\MENU.OBJ)
+     00h     00c7h     00c7h    0001h      DATA     3         @HCCINIT_REC_TIME_flag (E:\FX801E_190411\SOUND_ISD1820.OBJ)
+     00h     00c8h     00c8h    0001h      DATA     3         @HCCINIT_feed_error (E:\FX801E_190411\LED.OBJ)
+     00h     00c9h     00cdh    0005h      DATA     2.4       @HCCINIT_eeprom_feed (E:\FX801E_190411\MENU.OBJ)
+     00h     00ceh     00ceh    0001h      DATA     2         @HCCINIT_key_int_3 (E:\FX801E_190411\KEYSCAN.OBJ)
+     00h     00cfh     00cfh    0001h      DATA     2         @HCCINIT_key_int_1 (E:\FX801E_190411\KEYSCAN.OBJ)
+     00h     00d0h     00d0h    0001h      DATA     2         @HCCINIT_vol_flag (E:\FX801E_190411\MAIN.OBJ)
+     00h     00d1h     00d1h    0001h      DATA     2         @HCCINIT_task_run_motor (E:\FX801E_190411\LED.OBJ)
+     00h     00d2h     00d2h    0001h      DATA     2         @HCCINIT_voltage_low (E:\FX801E_190411\VOLTAGE.OBJ)
+     00h     00d3h     00d3h    0001h      DATA     1         @HCCINIT_key_int_2 (E:\FX801E_190411\KEYSCAN.OBJ)
+     00h     00d4h     00d4h    0001h      DATA     1         @HCCINIT_food_out (E:\FX801E_190411\MOTER.OBJ)
+     00h     00d5h     00d5h    0001h      DATA     1         @HCCINIT_task_delay_error (E:\FX801E_190411\LED.OBJ)
+     00h     00d6h     00dch    0007h      DATA     0         @HCCINIT_rx_com (E:\FX801E_190411\DEFINE.OBJ)
+     00h     00ddh     00ddh    0001h      DATA     0         @HCCINIT_error_time (E:\FX801E_190411\MAIN.OBJ)
+     00h     00deh     00deh    0001h      DATA     0         @HCCINIT_buzzer_time (E:\FX801E_190411\MAIN.OBJ)
+     00h     00dfh     00dfh    0001h      DATA     0         @HCCINIT_food_count (E:\FX801E_190411\MOTER.OBJ)
+     00h     00e0h     00e1h    0002h      DATA     0         @HCCINIT_food_timeout (E:\FX801E_190411\MOTER.OBJ)
+     00h     00e2h     00e2h    0001h      DATA     0         @HCCINIT_feed_detect_again (E:\FX801E_190411\LED.OBJ)
+     00h     00e3h     00e5h    0003h      DATA     18.667    @HCCINIT0_rtc_date (E:\FX801E_190411\CLOCK_RUN.OBJ)
+     00h     00e6h     00e7h    0002h      DATA     1         @HCCINIT0_k1 (E:\FX801E_190411\VOLTAGE.OBJ)
+     00h     00e8h     00e9h    0002h      DATA     1         @HCCINIT0_k (E:\FX801E_190411\VOLTAGE.OBJ)
+     00h     00eah     00eah    0001h      DATA     0         @HCCINIT0_rx_flag (E:\FX801E_190411\DEFINE.OBJ)
+     00h     00ebh     00ebh    0001h      DATA     0         @HCCINIT0_rx_pos (E:\FX801E_190411\DEFINE.OBJ)
+     00h     00ech     00ech    0001h      DATA     0         @HCCINIT0_com_pos (E:\FX801E_190411\DEFINE.OBJ)
+     00h     00edh     00edh    0001h      DATA     0         @HCCINIT0_uart_flag (E:\FX801E_190411\DEFINE.OBJ)
+     00h     00eeh     00eeh    0001h      DATA     2         @data_r30c (isr:ra~rh)
+     00h     00efh     00efh    0001h      DATA     2         @data_r40c (isr:ra~rh)
+     00h     00f0h     00f0h    0001h      DATA     2         @data_r50c (isr:ra~rh)
+     00h     00f1h     00f1h    0001h      DATA     2         @data_r60c (isr:ra~rh)
+
+     Local Sections
+
+     Bank    Start     End      Length     Class    AvgIns    Name
+     00h     00adh     00adh    0000h      LOCAL    0         @dummy (E:\FX801E_190411\MAIN.OBJ)
+     00h     00a7h     00ach    0006h      LOCAL    2.1667    _main (E:\FX801E_190411\MAIN.OBJ)
+     00h     0093h     0093h    0000h      LOCAL    0         _init_SyS (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0093h     0093h    0000h      LOCAL    0         _init_Timerset (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0093h     0093h    0000h      LOCAL    0         _LCD_init (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0093h     0093h    0000h      LOCAL    0         _AD_init (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0093h     0093h    0000h      LOCAL    0         _init_Timer (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0093h     0093h    0000h      LOCAL    0         _init_Timer_isc0 (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0093h     0093h    0000h      LOCAL    0         _init_Timer1 (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0096h     0096h    0000h      LOCAL    0         _GPIO_INIT (E:\FX801E_190411\MENU.OBJ)
+     00h     0093h     0095h    0003h      LOCAL    3         _GPIOF_INIT (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0093h     0095h    0003h      LOCAL    3         _GPIOE_INIT (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0093h     0095h    0003h      LOCAL    3         _GPIOC_INIT (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0093h     0095h    0003h      LOCAL    3.6667    _GPIOB_INIT (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0093h     0095h    0003h      LOCAL    3.6667    _GPIOA_INIT (E:\FX801E_190411\INIT_HT67F489.OBJ)
+     00h     0096h     0096h    0000h      LOCAL    0         _kaiji_init (E:\FX801E_190411\MENU.OBJ)
+     00h     0093h     0093h    0000h      LOCAL    0         _lcd_fill_sr (E:\FX801E_190411\LCD.OBJ)
+     00h     0094h     0095h    0002h      LOCAL    24        _Delay_ms (E:\FX801E_190411\UART.OBJ)
+     00h     0093h     0093h    0001h      LOCAL    2         _builtin_holtek_delay_isr00 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0093h     0093h    0000h      LOCAL    0         _LCD_clrscreen (E:\FX801E_190411\LCD.OBJ)
+     00h     0093h     0093h    0000h      LOCAL    0         _voltage_lcd (E:\FX801E_190411\VOLTAGE.OBJ)
+     00h     0093h     0093h    0000h      LOCAL    0         _rtc_init (E:\FX801E_190411\CLOCK_RUN.OBJ)
+     00h     0095h     0095h    0001h      LOCAL    4         _e2prom_init (E:\FX801E_190411\EEPROM.OBJ)
+     00h     0093h     0093h    0001h      LOCAL    2         _e2prom_read (E:\FX801E_190411\EEPROM.OBJ)
+     00h     0093h     0094h    0002h      LOCAL    6.5       _e2prom_write (E:\FX801E_190411\EEPROM.OBJ)
+     00h     0098h     0098h    0000h      LOCAL    0         _rtc_lcd (E:\FX801E_190411\LCD.OBJ)
+     00h     0093h     0097h    0005h      LOCAL    23        _builtin_holtek_divmodqi4_isr00 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0096h     0096h    0000h      LOCAL    0         _BUZZER_inlt (E:\FX801E_190411\MAIN.OBJ)
+     00h     0095h     0095h    0000h      LOCAL    0         _time_save (E:\FX801E_190411\CLOCK_RUN.OBJ)
+     00h     0096h     0096h    0000h      LOCAL    0         _key_scan (E:\FX801E_190411\KEYSCAN.OBJ)
+     00h     0095h     0095h    0000h      LOCAL    0         _kaiji_mode (E:\FX801E_190411\MENU.OBJ)
+     00h     0096h     0096h    0001h      LOCAL    3         _sound_rec (E:\FX801E_190411\SOUND_ISD1820.OBJ)
+     00h     00a3h     00a6h    0004h      LOCAL    5.5       _set_meal (E:\FX801E_190411\MENU.OBJ)
+     00h     0093h     0093h    0001h      LOCAL    1         _lcd_num_5 (E:\FX801E_190411\MENU.OBJ)
+     00h     0096h     00a2h    000dh      LOCAL    5.7692    _set_val (E:\FX801E_190411\MENU.OBJ)
+     00h     0094h     0095h    0002h      LOCAL    7.5       _lcd_selcet (E:\FX801E_190411\MENU.OBJ)
+     00h     0093h     0093h    0001h      LOCAL    1         _lcd_num_1 (E:\FX801E_190411\MENU.OBJ)
+     00h     0093h     0093h    0001h      LOCAL    1         _lcd_num2_2 (E:\FX801E_190411\MENU.OBJ)
+     00h     0093h     0093h    0001h      LOCAL    1         _lcd_num_3 (E:\FX801E_190411\MENU.OBJ)
+     00h     0093h     0093h    0001h      LOCAL    1         _lcd_num (E:\FX801E_190411\MENU.OBJ)
+     00h     0093h     0093h    0001h      LOCAL    1         _lcd_selcet_off (E:\FX801E_190411\MENU.OBJ)
+     00h     009eh     009eh    0000h      LOCAL    0         _set_time (E:\FX801E_190411\MENU.OBJ)
+     00h     0096h     009dh    0008h      LOCAL    6.125     _set_val_time (E:\FX801E_190411\MENU.OBJ)
+     00h     0093h     0093h    0000h      LOCAL    0         _Crom2Prom (CROM2PROM)
+     00h     0096h     0096h    0000h      LOCAL    0         _sound_play (E:\FX801E_190411\SOUND_ISD1820.OBJ)
+     00h     0096h     009bh    0006h      LOCAL    2.8333    _get_meal (E:\FX801E_190411\MENU.OBJ)
+     00h     0093h     0093h    0000h      LOCAL    0         _frist_menu (E:\FX801E_190411\MENU.OBJ)
+     00h     0093h     0093h    0001h      LOCAL    5         _menu_lcd (E:\FX801E_190411\MENU.OBJ)
+     00h     0093h     0093h    0000h      LOCAL    0         _sleep_mode (E:\FX801E_190411\MENU.OBJ)
+     00h     0098h     009ch    0005h      LOCAL    6.4       _feed_scan (E:\FX801E_190411\FEED.OBJ)
+     00h     00a0h     00a3h    0004h      LOCAL    3.25      _feed_run (E:\FX801E_190411\FEED.OBJ)
+     00h     009bh     009fh    0005h      LOCAL    2.4       _motor (E:\FX801E_190411\MOTER.OBJ)
+     00h     0096h     009ah    0005h      LOCAL    6.2       _motor_run (E:\FX801E_190411\MOTER.OBJ)
+     00h     0093h     0093h    0000h      LOCAL    0         @dummy12 (E:\FX801E_190411\MAIN.OBJ)
+     00h     0092h     0092h    0001h      LOCAL    4         _Interrupt_tm0 (E:\FX801E_190411\MAIN.OBJ)
+     00h     0092h     0092h    0000h      LOCAL    0         _pwr_task (E:\FX801E_190411\LED.OBJ)
+     00h     0092h     0092h    0000h      LOCAL    0         @dummy44 (E:\FX801E_190411\MAIN.OBJ)
+     00h     0092h     0092h    0000h      LOCAL    0         _Interrupt_ISC0 (E:\FX801E_190411\MAIN.OBJ)
+     00h     0092h     0092h    0000h      LOCAL    0         @dummy4 (E:\FX801E_190411\MAIN.OBJ)
+     00h     0092h     0092h    0000h      LOCAL    0         _Interrupt_INT0 (E:\FX801E_190411\MAIN.OBJ)
+     00h     0092h     0092h    0000h      LOCAL    0         @dummy8 (E:\FX801E_190411\MAIN.OBJ)
+     00h     0092h     0092h    0000h      LOCAL    0         _Interrupt_INT1 (E:\FX801E_190411\MAIN.OBJ)
+     00h     0092h     0092h    0000h      LOCAL    0         @dummy36 (E:\FX801E_190411\MAIN.OBJ)
+     00h     0092h     0092h    0000h      LOCAL    0         _Interrupt_INT2 (E:\FX801E_190411\MAIN.OBJ)
+     00h     0092h     0092h    0000h      LOCAL    0         @dummy40 (E:\FX801E_190411\MAIN.OBJ)
+     00h     0092h     0092h    0000h      LOCAL    0         _Interrupt_INT3 (E:\FX801E_190411\MAIN.OBJ)
+
+     Public Symbols Information
+     Address            Public by Name
+     0101h              _AD_init
+     001dh              _BUZZER_inlt
+     1229h              _Crom2Prom
+     1228h              _Crom2PromNext
+     017eh              _Delay_ms
+     0089h              _GPIOA_INIT
+     0093h              _GPIOA_INIT_2
+     009fh              _GPIOB_INIT
+     00b5h              _GPIOC_INIT
+     00cbh              _GPIOE_INIT
+     00e1h              _GPIOF_INIT
+     105ch              _GPIO_INIT
+     00bch              _ISD1820_REC_TIME
+     082eh              _Interrupt_INT0
+     0834h              _Interrupt_INT1
+     083ah              _Interrupt_INT2
+     0840h              _Interrupt_INT3
+     080eh              _Interrupt_ISC0
+     07b1h              _Interrupt_tm0
+     060bh              _LCD_clrscreen
+     00f7h              _LCD_init
+     00c7h              _REC_TIME_flag
+     1206h              __DELAYY0_isr00
+     1205h              __DELAYY1_isr00
+     1204h              __DELAYY2_isr00
+     1203h              __DELAYY3_isr00
+     1202h              __DELAYY4_isr00
+     1201h              __DELAYY5_isr00
+     120fh              _builtin_holtek_udivmodqi4_isr00
+     00c2h              _buzzer_detect
+     00deh              _buzzer_time
+     00b7h              _col_staus
+     00ech              _com_pos
+     016fh              _e2prom_init
+     0157h              _e2prom_read
+     0141h              _e2prom_write
+     00c9h              _eeprom_feed
+     00c3h              _eeprom_time
+     00ddh              _error_time
+     00bdh              _feed_detect
+     00e2h              _feed_detect_again
+     00c8h              _feed_error
+     00bah              _feed_going
+     1084h              _feed_run
+     10d4h              _feed_scan
+     00dfh              _food_count
+     00d4h              _food_out
+     00e0h              _food_timeout
+     0fa8h              _frist_menu
+     0e76h              _get_meal
+     0109h              _init_SyS
+     0113h              _init_Timer
+     011dh              _init_Timer1
+     0128h              _init_Timer_isc0
+     0133h              _init_Timerset
+     00e8h              _k
+     00e6h              _k1
+     0fe3h              _kaiji_init
+     0fc4h              _kaiji_mode
+     00bfh              _key_int
+     00cfh              _key_int_1
+     00d3h              _key_int_2
+     00ceh              _key_int_3
+     00b5h              _key_lock
+     018eh              _key_scan
+     00b8h              _key_up_flag
+     00afh              _key_value_count
+     0269h              _lcd_fill_sr
+     00b2h              _lcd_glint
+     0927h              _lcd_num
+     0a94h              _lcd_num2_2
+     0b75h              _lcd_num_1
+     0a08h              _lcd_num_3
+     0846h              _lcd_num_5
+     0bb9h              _lcd_selcet
+     0bd8h              _lcd_selcet_off
+     00adh              _lcd_timeout
+     00b3h              _led_flag
+     0676h              _main
+     00b1h              _meal_flag
+     0ec4h              _menu_lcd
+     11adh              _motor
+     1153h              _motor_run
+     11f9h              _pwr_task
+     00bbh              _res
+     00e3h              _rtc_date
+     0010h              _rtc_init
+     02bch              _rtc_lcd
+     00d6h              _rx_com
+     00eah              _rx_flag
+     00ebh              _rx_pos
+     0df6h              _set_meal
+     0d8ah              _set_time
+     0c19h              _set_val
+     0096h              _set_val_2
+     0cddh              _set_val_time
+     00b4h              _sheep_flag
+     0f5fh              _sleep_mode
+     11f1h              _sound_play
+     11dah              _sound_rec
+     00d5h              _task_delay_error
+     00beh              _task_delay_led
+     00b9h              _task_run_led
+     00d1h              _task_run_motor
+     00b6h              _time2_task
+     0014h              _time_save
+     00c1h              _time_save_flag
+     00c0h              _time_save_flag_1
+     00edh              _uart_flag
+     00d0h              _vol_flag
+     0001h              _voltage_lcd
+     00d2h              _voltage_low
+     008ah              r104
+     008ch              r108
+     0085h              r10c
+     008eh              r124
+     0090h              r128
+     0088h              r12c
+     008bh              r204
+     008dh              r208
+     0086h              r20c
+     008fh              r224
+     0091h              r228
+     0089h              r22c
+     00eeh              r30c
+     00efh              r40c
+     00f0h              r50c
+     00f1h              r60c
+     0080h              ra
+     0087h              ra0c
+     0081h              rb
+     0082h              rc
+     0083h              rd
+     0084h              re
+     002fh              startup_value_1
+
+     Address            Public by Value
+     0001h              _voltage_lcd
+     0010h              _rtc_init
+     0014h              _time_save
+     001dh              _BUZZER_inlt
+     002fh              startup_value_1
+     0080h              ra
+     0081h              rb
+     0082h              rc
+     0083h              rd
+     0084h              re
+     0085h              r10c
+     0086h              r20c
+     0087h              ra0c
+     0088h              r12c
+     0089h              r22c
+     0089h              _GPIOA_INIT
+     008ah              r104
+     008bh              r204
+     008ch              r108
+     008dh              r208
+     008eh              r124
+     008fh              r224
+     0090h              r128
+     0091h              r228
+     0093h              _GPIOA_INIT_2
+     0096h              _set_val_2
+     009fh              _GPIOB_INIT
+     00adh              _lcd_timeout
+     00afh              _key_value_count
+     00b1h              _meal_flag
+     00b2h              _lcd_glint
+     00b3h              _led_flag
+     00b4h              _sheep_flag
+     00b5h              _key_lock
+     00b5h              _GPIOC_INIT
+     00b6h              _time2_task
+     00b7h              _col_staus
+     00b8h              _key_up_flag
+     00b9h              _task_run_led
+     00bah              _feed_going
+     00bbh              _res
+     00bch              _ISD1820_REC_TIME
+     00bdh              _feed_detect
+     00beh              _task_delay_led
+     00bfh              _key_int
+     00c0h              _time_save_flag_1
+     00c1h              _time_save_flag
+     00c2h              _buzzer_detect
+     00c3h              _eeprom_time
+     00c7h              _REC_TIME_flag
+     00c8h              _feed_error
+     00c9h              _eeprom_feed
+     00cbh              _GPIOE_INIT
+     00ceh              _key_int_3
+     00cfh              _key_int_1
+     00d0h              _vol_flag
+     00d1h              _task_run_motor
+     00d2h              _voltage_low
+     00d3h              _key_int_2
+     00d4h              _food_out
+     00d5h              _task_delay_error
+     00d6h              _rx_com
+     00ddh              _error_time
+     00deh              _buzzer_time
+     00dfh              _food_count
+     00e0h              _food_timeout
+     00e1h              _GPIOF_INIT
+     00e2h              _feed_detect_again
+     00e3h              _rtc_date
+     00e6h              _k1
+     00e8h              _k
+     00eah              _rx_flag
+     00ebh              _rx_pos
+     00ech              _com_pos
+     00edh              _uart_flag
+     00eeh              r30c
+     00efh              r40c
+     00f0h              r50c
+     00f1h              r60c
+     00f7h              _LCD_init
+     0101h              _AD_init
+     0109h              _init_SyS
+     0113h              _init_Timer
+     011dh              _init_Timer1
+     0128h              _init_Timer_isc0
+     0133h              _init_Timerset
+     0141h              _e2prom_write
+     0157h              _e2prom_read
+     016fh              _e2prom_init
+     017eh              _Delay_ms
+     018eh              _key_scan
+     0269h              _lcd_fill_sr
+     02bch              _rtc_lcd
+     060bh              _LCD_clrscreen
+     0676h              _main
+     07b1h              _Interrupt_tm0
+     080eh              _Interrupt_ISC0
+     082eh              _Interrupt_INT0
+     0834h              _Interrupt_INT1
+     083ah              _Interrupt_INT2
+     0840h              _Interrupt_INT3
+     0846h              _lcd_num_5
+     0927h              _lcd_num
+     0a08h              _lcd_num_3
+     0a94h              _lcd_num2_2
+     0b75h              _lcd_num_1
+     0bb9h              _lcd_selcet
+     0bd8h              _lcd_selcet_off
+     0c19h              _set_val
+     0cddh              _set_val_time
+     0d8ah              _set_time
+     0df6h              _set_meal
+     0e76h              _get_meal
+     0ec4h              _menu_lcd
+     0f5fh              _sleep_mode
+     0fa8h              _frist_menu
+     0fc4h              _kaiji_mode
+     0fe3h              _kaiji_init
+     105ch              _GPIO_INIT
+     1084h              _feed_run
+     10d4h              _feed_scan
+     1153h              _motor_run
+     11adh              _motor
+     11dah              _sound_rec
+     11f1h              _sound_play
+     11f9h              _pwr_task
+     1201h              __DELAYY5_isr00
+     1202h              __DELAYY4_isr00
+     1203h              __DELAYY3_isr00
+     1204h              __DELAYY2_isr00
+     1205h              __DELAYY1_isr00
+     1206h              __DELAYY0_isr00
+     120fh              _builtin_holtek_udivmodqi4_isr00
+     1228h              _Crom2PromNext
+     1229h              _Crom2Prom
+
+
+ROM Usage Statistics
+     Size      Used     Percentage
+     2000h     1229h    56%
+
+RAM Usage Statistics
+    Bank      Size      Used     Percentage
+     00h       0080h     0072h    89%
+     02h       0080h     0000h    0%
+     Total     0100h     0072h    44%
+
+Use Stack Count
+_main: 5
+_Interrupt_tm0: 1
+_Interrupt_ISC0: 0
+_Interrupt_INT0: 0
+_Interrupt_INT1: 0
+_Interrupt_INT2: 0
+_Interrupt_INT3: 0
+_voltage_get: 1
+
+Call Tree
+    @dummy
+        _main (0)
+            _init_SyS (1)
+            _init_Timerset (1)
+            _LCD_init (1)
+            _AD_init (1)
+            _init_Timer (1)
+            _init_Timer_isc0 (1)
+            _init_Timer1 (1)
+            _GPIO_INIT (1)
+                _GPIOF_INIT (2)
+                _GPIOE_INIT (2)
+                _GPIOC_INIT (2)
+                _GPIOB_INIT (2)
+                _GPIOA_INIT (2)
+            _kaiji_init (1)
+                _lcd_fill_sr (2)
+                _Delay_ms (2)
+                    _builtin_holtek_delay_isr00 (3)
+                _LCD_clrscreen (2)
+                _voltage_lcd (2)
+            _rtc_init (1)
+            _e2prom_init (1)
+                _e2prom_read (2)
+                _e2prom_write (2)
+            _e2prom_read (1)
+            _rtc_lcd (1)
+                _builtin_holtek_divmodqi4_isr00 (2)
+            _BUZZER_inlt (1)
+                _Delay_ms (2)
+                    _builtin_holtek_delay_isr00 (3)
+            _time_save (1)
+                _e2prom_write (2)
+            _key_scan (1)
+                _Delay_ms (2)
+                    _builtin_holtek_delay_isr00 (3)
+            _kaiji_mode (1)
+                _time_save (2)
+                    _e2prom_write (3)
+            _e2prom_write (1)
+            _Delay_ms (1)
+                _builtin_holtek_delay_isr00 (2)
+            _sound_rec (1)
+                _key_scan (2)
+                    _Delay_ms (3)
+                        _builtin_holtek_delay_isr00 (4)
+            _set_meal (1)
+                _e2prom_read (2)
+                _lcd_num_5 (2)
+                _set_val (2)
+                    _e2prom_read (3)
+                    _key_scan (3)
+                        _Delay_ms (4)
+                            _builtin_holtek_delay_isr00 (5)
+                    _BUZZER_inlt (3)
+                        _Delay_ms (4)
+                            _builtin_holtek_delay_isr00 (5)
+                    _Delay_ms (3)
+                        _builtin_holtek_delay_isr00 (4)
+                    _lcd_selcet (3)
+                        _lcd_num_5 (4)
+                        _lcd_num_1 (4)
+                        _lcd_num2_2 (4)
+                        _lcd_num_3 (4)
+                        _lcd_num (4)
+                    _e2prom_write (3)
+                    _lcd_selcet_off (3)
+                _e2prom_write (2)
+            _set_time (1)
+                _builtin_holtek_divmodqi4_isr00 (2)
+                _set_val_time (2)
+                    _Crom2Prom (3)
+                    _key_scan (3)
+                        _Delay_ms (4)
+                            _builtin_holtek_delay_isr00 (5)
+                    _BUZZER_inlt (3)
+                        _Delay_ms (4)
+                            _builtin_holtek_delay_isr00 (5)
+                    _lcd_selcet (3)
+                        _lcd_num_5 (4)
+                        _lcd_num_1 (4)
+                        _lcd_num2_2 (4)
+                        _lcd_num_3 (4)
+                        _lcd_num (4)
+                    _Delay_ms (3)
+                        _builtin_holtek_delay_isr00 (4)
+                    _lcd_selcet_off (3)
+                _time_save (2)
+                    _e2prom_write (3)
+            _sound_play (1)
+                _Delay_ms (2)
+                    _builtin_holtek_delay_isr00 (3)
+            _get_meal (1)
+                _e2prom_read (2)
+                _lcd_selcet (2)
+                    _lcd_num_5 (3)
+                    _lcd_num_1 (3)
+                    _lcd_num2_2 (3)
+                    _lcd_num_3 (3)
+                    _lcd_num (3)
+            _frist_menu (1)
+            _menu_lcd (1)
+            _sleep_mode (1)
+            _feed_scan (1)
+                _e2prom_read (2)
+                _Crom2Prom (2)
+                _rtc_lcd (2)
+                    _builtin_holtek_divmodqi4_isr00 (3)
+            _voltage_lcd (1)
+            _feed_run (1)
+                _Crom2Prom (2)
+                _sound_play (2)
+                    _Delay_ms (3)
+                        _builtin_holtek_delay_isr00 (4)
+                _Delay_ms (2)
+                    _builtin_holtek_delay_isr00 (3)
+                _motor (2)
+                    _motor_run (3)
+                        _Delay_ms (4)
+                            _builtin_holtek_delay_isr00 (5)
+    @dummy12
+        _Interrupt_tm0 (0)
+            _pwr_task (1)
+    @dummy44
+        _Interrupt_ISC0 (0)
+    @dummy4
+        _Interrupt_INT0 (0)
+    @dummy8
+        _Interrupt_INT1 (0)
+    @dummy36
+        _Interrupt_INT2 (0)
+    @dummy40
+        _Interrupt_INT3 (0)
+    _voltage_get
+        _start_conversion (0)
+
+HLINK : 程序的开始执行点在程序段'@code'（地址0）。定义在'E:\FX801E_190411\MAIN.OBJ' 文件中
+
+错误总数 : 0  警告总数 : 0
